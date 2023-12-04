@@ -1,25 +1,25 @@
-# Some ROS2 with raspberry pico, nvidia Jetson AGX and other stuff
+# 2WD robot based on ROS2
 ## Introduction
 
-This repository includes my first try to integrate raspberry pico as a motor driver and integrate with ROS2 in a basic setup for a 2WD/4WD autonomous car
+This repository includes the steps to create a 2WD robot for autonomous navitation using ROS2
 
 ## Technologies
 
 ### Hardware
 
-- Raspberry pico (1)
-- Motor Driver DRV8833 (1 or 2)
-- DC Motors with hall encoder (2 or 4)
-- Jetson Nano (1) or Jetson AGX (1)
+- Raspberry Pico for motor driver - connected trough USB so pico W is not required (1)
+- Motor Driver DRV8833 (better performance than LM328)  (1)
+- DC Motors with hall or optic encoder  (2) to run 2WD vehicle
+- Jetson Nano (1) or Raspberry PI (1) to run ROS2
 
 
 ### Software
 
 - C++
+- Raspberry Pico SDK
 - Python 3.8.10
-- Ubuntu 20.04
-- ROS 2 Foxy
-- Jetpack 5.0.1 Developer Preview
+- Ubuntu 22.04LTE
+- ROS 2 Humble
 - VSC 
 
 ## Setup
@@ -28,6 +28,8 @@ This is only for checking motor integration. No encoder input at this time.
 
 ![DC motors and driver](./images/circuit_base_rel2.png)
 
+## ./prototype folder 
+## this foldar contains first rutine test of the motor driver
 ## Program description
 
 ### 1. motor_driver
