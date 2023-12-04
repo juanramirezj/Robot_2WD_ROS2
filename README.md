@@ -28,9 +28,7 @@ This is only for checking motor integration. No encoder input at this time.
 
 ![DC motors and driver](./images/circuit_base_rel2.png)
 
-## ./prototype folder 
-## this foldar contains first rutine test of the motor driver
-## Program description
+## folder:  ./prototype <br> This foldar contains first rutine test of the motor driver <br>  List of programs description:
 
 ### 1. motor_driver
 
