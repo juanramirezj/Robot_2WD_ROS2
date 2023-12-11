@@ -1,0 +1,3 @@
+/home/administrator/robot2wd/prototype/motor3_driver/build/pioasm/CMakeFiles/pioasm.dir
+/home/administrator/robot2wd/prototype/motor3_driver/build/pioasm/CMakeFiles/edit_cache.dir
+/home/administrator/robot2wd/prototype/motor3_driver/build/pioasm/CMakeFiles/rebuild_cache.dir

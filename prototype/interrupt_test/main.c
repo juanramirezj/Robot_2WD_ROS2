@@ -13,8 +13,8 @@ const uint32_t period_timer = 500; //ms
 
 static char event_str[128];
 void gpio_event_string(char *buf, uint32_t events);
-const uint wheelL_pin = 3;
-const uint wheelR_pin = 0;
+const uint wheelL_pin = 27;
+const uint wheelR_pin = 26;
 uint wheelL_ticks = 0;
 uint wheelR_ticks = 0;
 uint wheelL_hz;
