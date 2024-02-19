@@ -1,0 +1,1 @@
+esta rutina de prueba usa interrupcoines para el encoder

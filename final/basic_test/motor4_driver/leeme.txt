@@ -1,0 +1,1 @@
+esta rutina de prueba usa pio para el encoder
