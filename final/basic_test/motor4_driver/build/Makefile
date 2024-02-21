@@ -220,6 +220,54 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
+ROSPicoBridge.obj: ROSPicoBridge.c.obj
+.PHONY : ROSPicoBridge.obj
+
+# target to build an object file
+ROSPicoBridge.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/ROSPicoBridge.c.obj
+.PHONY : ROSPicoBridge.c.obj
+
+ROSPicoBridge.i: ROSPicoBridge.c.i
+.PHONY : ROSPicoBridge.i
+
+# target to preprocess a source file
+ROSPicoBridge.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/ROSPicoBridge.c.i
+.PHONY : ROSPicoBridge.c.i
+
+ROSPicoBridge.s: ROSPicoBridge.c.s
+.PHONY : ROSPicoBridge.s
+
+# target to generate assembly for a file
+ROSPicoBridge.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/ROSPicoBridge.c.s
+.PHONY : ROSPicoBridge.c.s
+
+encoder_driver.obj: encoder_driver.c.obj
+.PHONY : encoder_driver.obj
+
+# target to build an object file
+encoder_driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/encoder_driver.c.obj
+.PHONY : encoder_driver.c.obj
+
+encoder_driver.i: encoder_driver.c.i
+.PHONY : encoder_driver.i
+
+# target to preprocess a source file
+encoder_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/encoder_driver.c.i
+.PHONY : encoder_driver.c.i
+
+encoder_driver.s: encoder_driver.c.s
+.PHONY : encoder_driver.s
+
+# target to generate assembly for a file
+encoder_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/encoder_driver.c.s
+.PHONY : encoder_driver.c.s
+
 home/administrator/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/administrator/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/administrator/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
@@ -1724,29 +1772,29 @@ home/administrator/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/home/administrator/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/administrator/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+motor_driver.obj: motor_driver.c.obj
+.PHONY : motor_driver.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+motor_driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/motor_driver.c.obj
+.PHONY : motor_driver.c.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+motor_driver.i: motor_driver.c.i
+.PHONY : motor_driver.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/main.cpp.i
-.PHONY : main.cpp.i
+motor_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/motor_driver.c.i
+.PHONY : motor_driver.c.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+motor_driver.s: motor_driver.c.s
+.PHONY : motor_driver.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/main.cpp.s
-.PHONY : main.cpp.s
+motor_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor4_driver.dir/build.make CMakeFiles/motor4_driver.dir/motor_driver.c.s
+.PHONY : motor_driver.c.s
 
 # Help Target
 help:
@@ -1764,6 +1812,12 @@ help:
 	@echo "... motor4_driver_quadrature_encoder_pio_h"
 	@echo "... bs2_default"
 	@echo "... motor4_driver"
+	@echo "... ROSPicoBridge.obj"
+	@echo "... ROSPicoBridge.i"
+	@echo "... ROSPicoBridge.s"
+	@echo "... encoder_driver.obj"
+	@echo "... encoder_driver.i"
+	@echo "... encoder_driver.s"
 	@echo "... home/administrator/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/administrator/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/administrator/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -1952,9 +2006,9 @@ help:
 	@echo "... home/administrator/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
 	@echo "... home/administrator/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/administrator/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... main.obj"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... motor_driver.obj"
+	@echo "... motor_driver.i"
+	@echo "... motor_driver.s"
 .PHONY : help
 
 

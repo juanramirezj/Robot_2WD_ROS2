@@ -10,6 +10,8 @@
 #include "hardware/timer.h"
 #include "quadrature_encoder.pio.h"
 
+#include "encoder_driver.h"
+
 uint32_t pwm_set_freq_duty(uint slice_num, uint chan, uint32_t f, int d)
 {
     uint32_t clock = 125000000;
@@ -103,7 +105,7 @@ volatile uint64_t t2 = 0;
 
 
 
-int main()
+int main_old()
 {
 
 
@@ -112,22 +114,21 @@ int main()
 
     // Base pin to connect the A phase of the encoder.
     // The B phase must be connected to the next pin
-    const uint PIN_AB1 = 18;   //20 and 26  26 is not working  20 is ok
+    // Note: I used gpp26 and gp27 for second motor, but for some reasong it never worked. I change to GP18 and GP19 and it worked. GP20 and GP21 also worked.
+    const uint PIN_AB1 = 18;   
     const uint PIN_AB2 = 20;
     
  
     stdio_init_all();
 
 
-    const uint sm1 = 0;
-    const uint sm2 = 1;
 
     // we don't really need to keep the offset, as this program must be loaded
     // at offset 0
     // using states machine 0 and 1 from pio0
     pio_add_program(pio0, &quadrature_encoder_program);
-    quadrature_encoder_program_init(pio0, sm1, PIN_AB1, 0); 
-    quadrature_encoder_program_init(pio0, sm2, PIN_AB2, 0); 
+    quadrature_encoder_program_init(pio0, SM1, PIN_AB1, 0); 
+    quadrature_encoder_program_init(pio0, SM2, PIN_AB2, 0); 
 
 
   
@@ -150,11 +151,11 @@ int main()
     while (1) {
         // note: thanks to two's complement arithmetic delta will always
         // be correct even when new_value wraps around MAXINT / MININT
-        new_value1 = quadrature_encoder_get_count(pio0, sm1);
+        new_value1 = quadrature_encoder_get_count(pio0, SM1);
         delta1 = new_value1 - old_value1;
         old_value1 = new_value1;
 
-        new_value2 = quadrature_encoder_get_count(pio0, sm2);
+        new_value2 = quadrature_encoder_get_count(pio0, SM2);
         delta2 = new_value2 - old_value2;
         old_value2 = new_value2;
 

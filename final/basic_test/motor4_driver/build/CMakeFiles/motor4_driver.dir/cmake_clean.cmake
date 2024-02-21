@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/motor4_driver.dir/ROSPicoBridge.c.obj"
+  "CMakeFiles/motor4_driver.dir/ROSPicoBridge.c.obj.d"
+  "CMakeFiles/motor4_driver.dir/encoder_driver.c.obj"
+  "CMakeFiles/motor4_driver.dir/encoder_driver.c.obj.d"
   "CMakeFiles/motor4_driver.dir/home/administrator/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "CMakeFiles/motor4_driver.dir/home/administrator/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "CMakeFiles/motor4_driver.dir/home/administrator/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
@@ -128,8 +132,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/motor4_driver.dir/home/administrator/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "CMakeFiles/motor4_driver.dir/home/administrator/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
   "CMakeFiles/motor4_driver.dir/home/administrator/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
-  "CMakeFiles/motor4_driver.dir/main.cpp.obj"
-  "CMakeFiles/motor4_driver.dir/main.cpp.obj.d"
+  "CMakeFiles/motor4_driver.dir/motor_driver.c.obj"
+  "CMakeFiles/motor4_driver.dir/motor_driver.c.obj.d"
   "motor4_driver.elf"
   "motor4_driver.pdb"
 )

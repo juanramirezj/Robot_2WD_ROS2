@@ -8,7 +8,10 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 add_executable(motor4_driver
-    main.cpp
+
+    encoder_driver.c
+    ROSPicoBridge.c
+    motor_driver.c
 )
 
 pico_generate_pio_header(motor4_driver ${CMAKE_CURRENT_LIST_DIR}/quadrature_encoder.pio)
